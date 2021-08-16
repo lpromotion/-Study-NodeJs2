@@ -1,0 +1,26 @@
+{
+  "name": "web2-nodejs",
+  "version": "1.0.0",
+  "description": "(책) 생활코딩! Node.js 노드제이에스 프로그래밍",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpromotion/_Study_NodeJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpromotion/_Study_NodeJs/issues"
+  },
+  "homepage": "https://github.com/lpromotion/_Study_NodeJs#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "sanitize-html": "^2.4.0"
+  }
+}
