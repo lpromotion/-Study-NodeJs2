@@ -5,6 +5,7 @@ var template = require('./lib/template.js');
 var db = require('./lib/db.js');
 var topic = require('./lib/topic.js');
 var mysql = require('mysql');
+var author = require('./lib/author');
 
 var db = mysql.createConnection({
   // 데이터베이스 접속에 필요한 정보를 정의
@@ -37,6 +38,8 @@ var app = http.createServer(function(request,response){
       topic.update_process(request, response);
     }else if(pathname === '/delete_process'){
       topic.delete_process(request, response);
+    }else if(pathname === '/author'){
+      author.home(request, response);
     }
     else{ // 루트가 아니라면 새로운 코드를 실행 (404 오류 페이지)
       response.writeHead(404);
