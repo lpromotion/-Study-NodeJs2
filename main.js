@@ -42,6 +42,10 @@ var app = http.createServer(function(request,response){
       author.home(request, response);
     }else if(pathname === '/author/create_process'){
       author.create_process(request, response);
+    }else if(pathname = '/author/update'){
+      author.update(request, response);
+    }else if(pathname === '/author/update_process'){
+      author.update_process(request, response);
     }
     else{ // 루트가 아니라면 새로운 코드를 실행 (404 오류 페이지)
       response.writeHead(404);
